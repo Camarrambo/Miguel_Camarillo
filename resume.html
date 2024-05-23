@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Miguel Camarillo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="navbar"></div>
+    </header>
+    <section id="resume">
+        <h2>Miguel Camarillo</h2>
+        <h3>Experience</h3>
+        <div class="experience">
+            <h4>Data Analyst</h4>
+            <p>Westat, Rockville, MD</p>
+            <p>Mar 2024 - Present</p>
+            <ul>
+                <li>Developed and implemented a sophisticated code-based system to categorize course content effectively for a national transcript study</li>
+                <li>Analyzed course catalogs using strong textual analysis skills, applying codes based on course content for a national transcript study</li>
+                <li>Analyzed catalogs using a code system to manipulate data for a research study</li>
+                <li>Employed data manipulation techniques within the coding system to facilitate research objectives</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <h4>Full Stack Developer</h4>
+            <p>University of Texas, El Paso, TX</p>
+            <p>May 2022 - May 2023</p>
+            <ul>
+                <li>Designed a data communication and visualization system utilizing Linux</li>
+                <li>Utilized AI for network assessment data analysis, enhancing infected node efficiency</li>
+                <li>Utilized MongoDB to create a cyber assessment tool, employing a color-coded system for detecting node infection severity</li>
+                <li>Collaborated in a cross-functional agile environment using Git</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <h4>Technical Support Specialist</h4>
+            <p>Union Services, El Paso, TX</p>
+            <p>Oct 2019 - May 2022</p>
+            <ul>
+                <li>Provided technical support to customers remotely and in person, ensuring timely resolution of software and hardware issues</li>
+                <li>Conducted thorough troubleshooting and root cause analysis to diagnose and resolve technical problems</li>
+                <li>Coordinated technology setups for presentations and conferences, ensuring smooth operation and addressing technical issues promptly</li>
+                <li>Reduced resolution time for technical issues by implementing streamlined processes, resulting in improved efficiency and productivity</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

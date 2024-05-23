@@ -1,0 +1,17 @@
+<header>
+  <div id="navbar"></div>
+</header>
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="project">
+      <h3>App Dev:</h3>
+      <p></p>
+  </div>
+</section>
+<script>
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+      });
+</script>

@@ -1,0 +1,18 @@
+<header>
+  <div id="navbar"></div>
+</header>
+<section id="blog">
+  <h2>Blog</h2>
+  <article>
+      <h3>Youtube: Camarrambo</h3>
+      <p>Link to latest video: </p>
+      <a href="link">https://www.youtube.com/watch?v=lYZAv4nqO4k</a>
+  </article>
+</section>
+<script>
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+      });
+</script>
